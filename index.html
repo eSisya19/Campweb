@@ -15,7 +15,6 @@
         .container {
             display: flex;
             justify-content: flex-end;
-            
         }
         .logo {
             font-size: 24px;
@@ -36,13 +35,13 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #000;
+            color: #fff; /* Changed to white */
             padding: 10px 15px;
             transition: background-color 0.3s, color 0.3s;
         }
         nav ul li a:hover {
-            background-color: #000;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             border-radius: 5px;
         }
         .menu-toggle {
@@ -50,10 +49,18 @@
             flex-direction: column;
             cursor: pointer;
         }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            position: absolute;
+            left: 470px;
+            top: -25px;
+        }
         .menu-toggle span {
             height: 3px;
             width: 25px;
-            background: #000;
+            background: #fff; /* Changed to white */
             margin: 4px 0;
         }
         .hero {
